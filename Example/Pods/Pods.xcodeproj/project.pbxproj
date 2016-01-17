@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0052B0FFDEDFAB5D0A585410FC0F23E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6F3CF9C1B27653099FE83AEA4BAFB1 /* Foundation.framework */; };
+		169B737E6BAC21D51B074E82FF5AB17D /* swift-serialize-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 085DC287B39586ED6CF5DA08B42EF28F /* swift-serialize-dummy.m */; };
+		1A6A6384EBB1FBDBACD70AE7FD9BF2A3 /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13C2C359A2546C00BF35FE2990B700D /* Initializer.swift */; };
+		3315A5C50584E7FE839687A66EC342CC /* Pods-ApiSwift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9035FF42514AF58B6505B61E1393BF62 /* Pods-ApiSwift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34525977BACC08E43FE435EE92F25F5B /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 3A76C3B5C60B32D6AC2CC84F363D0590 /* Info.plist */; };
+		38C67562B36885A70F4DC97A57C4A15A /* NSMutableURLRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CDDF6D1A2599B8216B93503B789C9A /* NSMutableURLRequestExtension.swift */; };
+		5D6121AD5B27CD0A06702676E7273234 /* swift-serialize-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BC2985994F1CD83C142117B14FB2F70 /* swift-serialize-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B984EA574EE3ACD8384103E4895DAA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6F3CF9C1B27653099FE83AEA4BAFB1 /* Foundation.framework */; };
+		A1C3DC6FF7DFC0F2D05EB7188BE2C2ED /* ApiSwift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2F383403D144EF74CC24AFE3A14057F /* ApiSwift.bundle */; };
+		AA1EF9613978947B822F1EFD6A2A3337 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6F3CF9C1B27653099FE83AEA4BAFB1 /* Foundation.framework */; };
+		C5DE5E4729A869583C1712AD6D94FCBB /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF37308776492655AF38DED5D8FB5610 /* Serializer.swift */; };
+		E3F07A39B0EE82EEA98E2527F8B1D2C2 /* Serialize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C070F4994769DEAC8633831667329D2 /* Serialize.framework */; };
+		E4762942C4E69312F28F724D7A9006C5 /* ApiSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 678B8FBB4156271D709C7BFABA4CFE2C /* ApiSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E50B1CC66640614FEB8BACDB358CA278 /* Pods-ApiSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E50F8F91E479193931BF45D34CE4A11 /* Pods-ApiSwift_Tests-dummy.m */; };
+		E56A183371CA75FBDB72852FC9018F98 /* ApiSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4E5350CD00FFE1E4F33516EDFBF2E5 /* ApiSwift-dummy.m */; };
+		FBA9C56BA0F538FDDD79BE284C2D29CF /* Serialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C4C3C2183BFE563EC00B96ED8F4DB /* Serialize.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11CB0F26EB863699990B11C75FBF1F69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAD295D007EA9D19F4A2B73EAE8D8826;
+			remoteInfo = "swift-serialize";
+		};
+		3AA631C7DE62579695C621B41238E59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDDABA7A6FD77C74CBF14929AF302E8E;
+			remoteInfo = ApiSwift;
+		};
+		9F4C9624B7632660DD5B8E71ABC9D788 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91529A38FE7F05A29B60B0E258710903;
+			remoteInfo = "ApiSwift-ApiSwift";
+		};
+		D7A298CC79A48AE391A8752064947957 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAD295D007EA9D19F4A2B73EAE8D8826;
+			remoteInfo = "swift-serialize";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		085DC287B39586ED6CF5DA08B42EF28F /* swift-serialize-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "swift-serialize-dummy.m"; sourceTree = "<group>"; };
+		088E0E150154406584F505BD0177B552 /* swift-serialize.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "swift-serialize.modulemap"; sourceTree = "<group>"; };
+		0B5B94F90C9DBFD3D2EFC0CB1E62071D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C070F4994769DEAC8633831667329D2 /* Serialize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Serialize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		143CD390758289BA15ABFFEED776B53A /* Pods-ApiSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ApiSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		283A2A0499C2A7F8BD9B6CE2D1E2E764 /* Pods-ApiSwift_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ApiSwift_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		2BC2985994F1CD83C142117B14FB2F70 /* swift-serialize-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "swift-serialize-umbrella.h"; sourceTree = "<group>"; };
+		3A76C3B5C60B32D6AC2CC84F363D0590 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Serialize/Info.plist; sourceTree = "<group>"; };
+		3E365DC1515B9783072F02396A4E4EE2 /* ApiSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ApiSwift.xcconfig; sourceTree = "<group>"; };
+		3FED89EB02C5D25E545CD54690299FCB /* swift-serialize.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "swift-serialize.xcconfig"; sourceTree = "<group>"; };
+		4A54CB36D53200F5EC46B7392E9FC11F /* Serialize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Serialize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B7290219CDD85288CC5FC7C17184A78 /* Pods-ApiSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ApiSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		54FA59F068DC1D37095C9845BFE23713 /* ApiSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ApiSwift.modulemap; sourceTree = "<group>"; };
+		5A6C4C3C2183BFE563EC00B96ED8F4DB /* Serialize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Serialize.swift; path = Serialize/Serialize.swift; sourceTree = "<group>"; };
+		5B8CF7E082BA6A9C542ED22AC0E9FEB0 /* Pods_ApiSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62DF66BD9E73744AB65A64B4906AB824 /* swift-serialize-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "swift-serialize-prefix.pch"; sourceTree = "<group>"; };
+		63E4C998F85CC7B99399F69EE37E7339 /* Pods-ApiSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ApiSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		678B8FBB4156271D709C7BFABA4CFE2C /* ApiSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ApiSwift-umbrella.h"; sourceTree = "<group>"; };
+		6E06A166CC636D6E27C66856D0FF42EA /* Pods-ApiSwift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ApiSwift_Tests.modulemap"; sourceTree = "<group>"; };
+		84CF873BAF8693FF41F3ECDC6E7FE081 /* ApiSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ApiSwift-prefix.pch"; sourceTree = "<group>"; };
+		8C4E5350CD00FFE1E4F33516EDFBF2E5 /* ApiSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ApiSwift-dummy.m"; sourceTree = "<group>"; };
+		8E50F8F91E479193931BF45D34CE4A11 /* Pods-ApiSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ApiSwift_Tests-dummy.m"; sourceTree = "<group>"; };
+		9035FF42514AF58B6505B61E1393BF62 /* Pods-ApiSwift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ApiSwift_Tests-umbrella.h"; sourceTree = "<group>"; };
+		992C31973EEF1A8267AF639061BEC867 /* Pods-ApiSwift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ApiSwift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AF37308776492655AF38DED5D8FB5610 /* Serializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
+		B7CDDF6D1A2599B8216B93503B789C9A /* NSMutableURLRequestExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSMutableURLRequestExtension.swift; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D01044C6A77AA663D545B58AAB101EEA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA6F3CF9C1B27653099FE83AEA4BAFB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E7A53679525745302A24F9D20EA380D6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F13C2C359A2546C00BF35FE2990B700D /* Initializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Initializer.swift; sourceTree = "<group>"; };
+		F2F383403D144EF74CC24AFE3A14057F /* ApiSwift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApiSwift.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4ECA687DF645F16F5013CEA7EB4B4D6 /* ApiSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ApiSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB95B4F25A12E7E3206EF1E64CDB42B0 /* Pods-ApiSwift_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ApiSwift_Tests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		639A192AEADBD357164D6DD41B6188FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0052B0FFDEDFAB5D0A585410FC0F23E8 /* Foundation.framework in Frameworks */,
+				E3F07A39B0EE82EEA98E2527F8B1D2C2 /* Serialize.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7886941C1651FE63C755310DB3F692A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF799D15B5477E29A6F475D5C6CCAFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA1EF9613978947B822F1EFD6A2A3337 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE668A0794E727A79C83AE0B0C4CAFEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B984EA574EE3ACD8384103E4895DAA1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04E00D6398C1FEAEED8791C72B10A616 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58A0C4207DF7020298EF5CA6F59D6552 /* swift-serialize */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1513BFAEACCBE55C7A6399D69E27F64A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C070F4994769DEAC8633831667329D2 /* Serialize.framework */,
+				5B9C4CEB4FD5073313AF41633103EF18 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CFD521A1D5460326F857988FE4826B3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E06928F0DB3CD30AC47268E3EC188A69 /* Pods-ApiSwift_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		558442C382E575F9538816232C769E2B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B5B94F90C9DBFD3D2EFC0CB1E62071D /* Info.plist */,
+				088E0E150154406584F505BD0177B552 /* swift-serialize.modulemap */,
+				3FED89EB02C5D25E545CD54690299FCB /* swift-serialize.xcconfig */,
+				085DC287B39586ED6CF5DA08B42EF28F /* swift-serialize-dummy.m */,
+				62DF66BD9E73744AB65A64B4906AB824 /* swift-serialize-prefix.pch */,
+				2BC2985994F1CD83C142117B14FB2F70 /* swift-serialize-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/swift-serialize";
+			sourceTree = "<group>";
+		};
+		58A0C4207DF7020298EF5CA6F59D6552 /* swift-serialize */ = {
+			isa = PBXGroup;
+			children = (
+				3A76C3B5C60B32D6AC2CC84F363D0590 /* Info.plist */,
+				5A6C4C3C2183BFE563EC00B96ED8F4DB /* Serialize.swift */,
+				558442C382E575F9538816232C769E2B /* Support Files */,
+			);
+			path = "swift-serialize";
+			sourceTree = "<group>";
+		};
+		5B9C4CEB4FD5073313AF41633103EF18 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DA6F3CF9C1B27653099FE83AEA4BAFB1 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7659BAC77137C1BF43393708DA5CE361 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				85F3B87ADC5BB063175D1381AF1358E0 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				A959F566174D36D643397D359C6094AC /* Development Pods */,
+				1513BFAEACCBE55C7A6399D69E27F64A /* Frameworks */,
+				04E00D6398C1FEAEED8791C72B10A616 /* Pods */,
+				EFA4E55B085E0D49E17730F4FD0FF4F9 /* Products */,
+				2CFD521A1D5460326F857988FE4826B3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		85F3B87ADC5BB063175D1381AF1358E0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F13C2C359A2546C00BF35FE2990B700D /* Initializer.swift */,
+				B7CDDF6D1A2599B8216B93503B789C9A /* NSMutableURLRequestExtension.swift */,
+				AF37308776492655AF38DED5D8FB5610 /* Serializer.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		976462436DF110D77AA2BBE6B46C6D68 /* ApiSwift */ = {
+			isa = PBXGroup;
+			children = (
+				7659BAC77137C1BF43393708DA5CE361 /* Pod */,
+				FB2B51B3F8E5AAB6B0107BD794242B32 /* Support Files */,
+			);
+			name = ApiSwift;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A959F566174D36D643397D359C6094AC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				976462436DF110D77AA2BBE6B46C6D68 /* ApiSwift */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E06928F0DB3CD30AC47268E3EC188A69 /* Pods-ApiSwift_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D01044C6A77AA663D545B58AAB101EEA /* Info.plist */,
+				6E06A166CC636D6E27C66856D0FF42EA /* Pods-ApiSwift_Tests.modulemap */,
+				143CD390758289BA15ABFFEED776B53A /* Pods-ApiSwift_Tests-acknowledgements.markdown */,
+				992C31973EEF1A8267AF639061BEC867 /* Pods-ApiSwift_Tests-acknowledgements.plist */,
+				8E50F8F91E479193931BF45D34CE4A11 /* Pods-ApiSwift_Tests-dummy.m */,
+				283A2A0499C2A7F8BD9B6CE2D1E2E764 /* Pods-ApiSwift_Tests-frameworks.sh */,
+				FB95B4F25A12E7E3206EF1E64CDB42B0 /* Pods-ApiSwift_Tests-resources.sh */,
+				9035FF42514AF58B6505B61E1393BF62 /* Pods-ApiSwift_Tests-umbrella.h */,
+				4B7290219CDD85288CC5FC7C17184A78 /* Pods-ApiSwift_Tests.debug.xcconfig */,
+				63E4C998F85CC7B99399F69EE37E7339 /* Pods-ApiSwift_Tests.release.xcconfig */,
+			);
+			name = "Pods-ApiSwift_Tests";
+			path = "Target Support Files/Pods-ApiSwift_Tests";
+			sourceTree = "<group>";
+		};
+		EFA4E55B085E0D49E17730F4FD0FF4F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2F383403D144EF74CC24AFE3A14057F /* ApiSwift.bundle */,
+				F4ECA687DF645F16F5013CEA7EB4B4D6 /* ApiSwift.framework */,
+				5B8CF7E082BA6A9C542ED22AC0E9FEB0 /* Pods_ApiSwift_Tests.framework */,
+				4A54CB36D53200F5EC46B7392E9FC11F /* Serialize.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB2B51B3F8E5AAB6B0107BD794242B32 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				54FA59F068DC1D37095C9845BFE23713 /* ApiSwift.modulemap */,
+				3E365DC1515B9783072F02396A4E4EE2 /* ApiSwift.xcconfig */,
+				8C4E5350CD00FFE1E4F33516EDFBF2E5 /* ApiSwift-dummy.m */,
+				84CF873BAF8693FF41F3ECDC6E7FE081 /* ApiSwift-prefix.pch */,
+				678B8FBB4156271D709C7BFABA4CFE2C /* ApiSwift-umbrella.h */,
+				E7A53679525745302A24F9D20EA380D6 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ApiSwift";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F922BCAA98E08B2A5947410BF59D12B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3315A5C50584E7FE839687A66EC342CC /* Pods-ApiSwift_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EF1FE241DAD20E17D6FA167E3D50A38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4762942C4E69312F28F724D7A9006C5 /* ApiSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F1FC941B921DCEC92B345EC364BB864 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D6121AD5B27CD0A06702676E7273234 /* swift-serialize-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		559049B292FE508517B0EA0FB14380DB /* Pods-ApiSwift_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6882FAD0FB11BBA0E78F1DC09658526 /* Build configuration list for PBXNativeTarget "Pods-ApiSwift_Tests" */;
+			buildPhases = (
+				D5D207A4372E21849CDC0BB7FD635231 /* Sources */,
+				DAF799D15B5477E29A6F475D5C6CCAFE /* Frameworks */,
+				0F922BCAA98E08B2A5947410BF59D12B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2261F5F2064DB09DC1EB0838C5CEFA14 /* PBXTargetDependency */,
+				49559297DBF59644529402AE102E3E96 /* PBXTargetDependency */,
+			);
+			name = "Pods-ApiSwift_Tests";
+			productName = "Pods-ApiSwift_Tests";
+			productReference = 5B8CF7E082BA6A9C542ED22AC0E9FEB0 /* Pods_ApiSwift_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		91529A38FE7F05A29B60B0E258710903 /* ApiSwift-ApiSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21D2197373918AA535AEB1DAD7D23488 /* Build configuration list for PBXNativeTarget "ApiSwift-ApiSwift" */;
+			buildPhases = (
+				913C5DF2059C04208EFCDCE388B30AE6 /* Sources */,
+				7886941C1651FE63C755310DB3F692A1 /* Frameworks */,
+				C4070E7F52606BF20299B187DF45956B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ApiSwift-ApiSwift";
+			productName = "ApiSwift-ApiSwift";
+			productReference = F2F383403D144EF74CC24AFE3A14057F /* ApiSwift.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		CAD295D007EA9D19F4A2B73EAE8D8826 /* swift-serialize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AF5D5A7042019716FF0E08F552EE633 /* Build configuration list for PBXNativeTarget "swift-serialize" */;
+			buildPhases = (
+				A9423854E626931344B7669A1C1C144A /* Sources */,
+				FE668A0794E727A79C83AE0B0C4CAFEB /* Frameworks */,
+				8F1FC941B921DCEC92B345EC364BB864 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-serialize";
+			productName = "swift-serialize";
+			productReference = 4A54CB36D53200F5EC46B7392E9FC11F /* Serialize.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FDDABA7A6FD77C74CBF14929AF302E8E /* ApiSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 459122770509842A74C8FABE8788037F /* Build configuration list for PBXNativeTarget "ApiSwift" */;
+			buildPhases = (
+				ADEE87624AFA12289942E61A78431DDC /* Sources */,
+				639A192AEADBD357164D6DD41B6188FF /* Frameworks */,
+				E3A8A6FFE19380C56888F9610C9AF1CA /* Resources */,
+				5EF1FE241DAD20E17D6FA167E3D50A38 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05FF1B216896C43D88CEE82DB0DD7F98 /* PBXTargetDependency */,
+				99C05F78F77E749F73DBF854574693D8 /* PBXTargetDependency */,
+			);
+			name = ApiSwift;
+			productName = ApiSwift;
+			productReference = F4ECA687DF645F16F5013CEA7EB4B4D6 /* ApiSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EFA4E55B085E0D49E17730F4FD0FF4F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDDABA7A6FD77C74CBF14929AF302E8E /* ApiSwift */,
+				91529A38FE7F05A29B60B0E258710903 /* ApiSwift-ApiSwift */,
+				559049B292FE508517B0EA0FB14380DB /* Pods-ApiSwift_Tests */,
+				CAD295D007EA9D19F4A2B73EAE8D8826 /* swift-serialize */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4070E7F52606BF20299B187DF45956B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3A8A6FFE19380C56888F9610C9AF1CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C3DC6FF7DFC0F2D05EB7188BE2C2ED /* ApiSwift.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		913C5DF2059C04208EFCDCE388B30AE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9423854E626931344B7669A1C1C144A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34525977BACC08E43FE435EE92F25F5B /* Info.plist in Sources */,
+				FBA9C56BA0F538FDDD79BE284C2D29CF /* Serialize.swift in Sources */,
+				169B737E6BAC21D51B074E82FF5AB17D /* swift-serialize-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEE87624AFA12289942E61A78431DDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E56A183371CA75FBDB72852FC9018F98 /* ApiSwift-dummy.m in Sources */,
+				1A6A6384EBB1FBDBACD70AE7FD9BF2A3 /* Initializer.swift in Sources */,
+				38C67562B36885A70F4DC97A57C4A15A /* NSMutableURLRequestExtension.swift in Sources */,
+				C5DE5E4729A869583C1712AD6D94FCBB /* Serializer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5D207A4372E21849CDC0BB7FD635231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E50B1CC66640614FEB8BACDB358CA278 /* Pods-ApiSwift_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05FF1B216896C43D88CEE82DB0DD7F98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ApiSwift-ApiSwift";
+			target = 91529A38FE7F05A29B60B0E258710903 /* ApiSwift-ApiSwift */;
+			targetProxy = 9F4C9624B7632660DD5B8E71ABC9D788 /* PBXContainerItemProxy */;
+		};
+		2261F5F2064DB09DC1EB0838C5CEFA14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ApiSwift;
+			target = FDDABA7A6FD77C74CBF14929AF302E8E /* ApiSwift */;
+			targetProxy = 3AA631C7DE62579695C621B41238E59A /* PBXContainerItemProxy */;
+		};
+		49559297DBF59644529402AE102E3E96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "swift-serialize";
+			target = CAD295D007EA9D19F4A2B73EAE8D8826 /* swift-serialize */;
+			targetProxy = 11CB0F26EB863699990B11C75FBF1F69 /* PBXContainerItemProxy */;
+		};
+		99C05F78F77E749F73DBF854574693D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "swift-serialize";
+			target = CAD295D007EA9D19F4A2B73EAE8D8826 /* swift-serialize */;
+			targetProxy = D7A298CC79A48AE391A8752064947957 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AA946EAECF943D05DD3B5567A9A3755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E365DC1515B9783072F02396A4E4EE2 /* ApiSwift.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ApiSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		66344D67303EAE791DA0ACFEBE71FEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E4C998F85CC7B99399F69EE37E7339 /* Pods-ApiSwift_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ApiSwift_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ApiSwift_Tests/Pods-ApiSwift_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ApiSwift_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		68DB50BF653E217862AB092105C6B63F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FED89EB02C5D25E545CD54690299FCB /* swift-serialize.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/swift-serialize/swift-serialize-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/swift-serialize/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/swift-serialize/swift-serialize.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Serialize;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		98E68BCDC2F5D30404303D76C80F62B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B7290219CDD85288CC5FC7C17184A78 /* Pods-ApiSwift_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ApiSwift_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ApiSwift_Tests/Pods-ApiSwift_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ApiSwift_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A643D550E8D0423540B17DF9857C54C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E365DC1515B9783072F02396A4E4EE2 /* ApiSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ApiSwift/ApiSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ApiSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ApiSwift/ApiSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ApiSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CC170362235A503339A8FD5DFA9AB747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FED89EB02C5D25E545CD54690299FCB /* swift-serialize.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/swift-serialize/swift-serialize-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/swift-serialize/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/swift-serialize/swift-serialize.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Serialize;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D26B9ABF77C7303DBE19404FB7E9692E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E365DC1515B9783072F02396A4E4EE2 /* ApiSwift.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ApiSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FB910371500BB49E46941047C4D70C7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E365DC1515B9783072F02396A4E4EE2 /* ApiSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ApiSwift/ApiSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ApiSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ApiSwift/ApiSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ApiSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21D2197373918AA535AEB1DAD7D23488 /* Build configuration list for PBXNativeTarget "ApiSwift-ApiSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D26B9ABF77C7303DBE19404FB7E9692E /* Debug */,
+				1AA946EAECF943D05DD3B5567A9A3755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AF5D5A7042019716FF0E08F552EE633 /* Build configuration list for PBXNativeTarget "swift-serialize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC170362235A503339A8FD5DFA9AB747 /* Debug */,
+				68DB50BF653E217862AB092105C6B63F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		459122770509842A74C8FABE8788037F /* Build configuration list for PBXNativeTarget "ApiSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB910371500BB49E46941047C4D70C7B /* Debug */,
+				A643D550E8D0423540B17DF9857C54C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6882FAD0FB11BBA0E78F1DC09658526 /* Build configuration list for PBXNativeTarget "Pods-ApiSwift_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98E68BCDC2F5D30404303D76C80F62B1 /* Debug */,
+				66344D67303EAE791DA0ACFEBE71FEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

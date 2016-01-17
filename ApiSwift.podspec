@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "ApiSwift"
   s.version          = "0.1.0"
-  s.summary          = "A short description of ApiSwift."
+  s.summary          = "A library to call a specified function on a server from Swift 2.0"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,9 +17,11 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+Call a function on a server with parameters as swift objects.
+Parameters are serialized, sent to the server, deserialized, then passed as arguments to the specific function 
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/ApiSwift"
+  s.homepage         = "https://github.com/ckalnasy/ApiSwift"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "CKalnasy" => "kalnasy.6@osu.edu" }
@@ -35,6 +37,6 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # s.frameworks = 
+  s.dependency 'swift-serialize', '~> 1.0'
 end

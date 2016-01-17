@@ -1,0 +1,17 @@
+PODS:
+  - ApiSwift (0.1.0):
+    - swift-serialize (~> 1.0)
+  - swift-serialize (1.0.0)
+
+DEPENDENCIES:
+  - ApiSwift (from `../`)
+
+EXTERNAL SOURCES:
+  ApiSwift:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ApiSwift: bfba47ebd40d0aedaf7b0a6a7c41295ebcab0915
+  swift-serialize: 6cc6ba441da336a218e5d5a85a81a58a877402de
+
+COCOAPODS: 0.39.0

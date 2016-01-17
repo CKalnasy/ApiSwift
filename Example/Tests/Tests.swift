@@ -1,29 +1,46 @@
 import UIKit
 import XCTest
 import ApiSwift
+import CoreLocation
+import ApiSwiftTestModule
 
-class Tests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+class ApiTests: XCTestCase {
+  func testSerialize() {
+    let expectedObj = TestClass(string: "String 1", number: 54, location: CLLocationCoordinate2DMake(39, 49), array: [1, 2, 3], map: ["key1" : ["key2": 43]], set: Set([1.4, 1, 3.6, 66.6]))
+    if let serializedObj = Serializer.serialize(expectedObj) {
+      do {
+        let obj = try Serializer.unserialize(serializedObj)
+        print(obj)
+        XCTAssertEqual(expectedObj, (obj as! TestClass))
+      } catch {
+        XCTFail()
+      }
     }
+  }
+  
+  func testMethodCall() {
+    let url = NSURL(string: "http://localhost:8000/Api.php")
+    let obj1 = TestClass(string: "String 1", number: 54, location: CLLocationCoordinate2DMake(39, 49), array: [1, 2, 3], map: ["key1" : ["key2": 43]], set: Set([1.4, 1, 3.6, 66.6]))
+    let params:[Any] = [obj1]
+    let additionalParams:[String: String] = [
+      "key1": "value 1",
+      "key2": "value 2"
+    ]
+    let request = NSMutableURLRequest(url: url!, className: "TestClass", functionName: "testFunction", params: params, additionalParams: additionalParams)
+    let expectation = expectationWithDescription("1")
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+    NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
+      if let data = data {
+        let expectedJson = String(data: request.HTTPBody!, encoding: NSUTF8StringEncoding)
+        let json = String(data: data, encoding: NSUTF8StringEncoding)
+        
+        XCTAssertEqual(expectedJson, json)
+      } else {
+        XCTFail("No json object was returned from the server")
+      }
+      expectation.fulfill()
+      }.resume()
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+    waitForExpectationsWithTimeout(5, handler: nil)
+  }
 }
