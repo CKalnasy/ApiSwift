@@ -16,15 +16,15 @@
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
+  "source_files": "ApiSwift/*",
   "resource_bundles": {
     "ApiSwift": [
       "Pod/Assets/*.png"
     ]
   },
   "dependencies": {
-    "swift-serialize": [
-      "~> 1.0"
+    "SwiftSerialize": [
+      "~> 0.1.0"
     ]
   }
 }

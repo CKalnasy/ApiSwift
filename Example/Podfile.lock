@@ -1,7 +1,9 @@
 PODS:
   - ApiSwift (0.1.0):
-    - swift-serialize (~> 1.0)
+    - SwiftSerialize (~> 0.1.0)
   - swift-serialize (1.0.0)
+  - SwiftSerialize (0.1.0):
+    - swift-serialize (~> 1.0)
 
 DEPENDENCIES:
   - ApiSwift (from `../`)
@@ -11,7 +13,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ApiSwift: bfba47ebd40d0aedaf7b0a6a7c41295ebcab0915
+  ApiSwift: 628a455dc8c0f641d418bfe1dc88771b76430d07
   swift-serialize: 6cc6ba441da336a218e5d5a85a81a58a877402de
+  SwiftSerialize: c691af8e8f0f6252d39d8c630afc32d98ea7c3f2
 
 COCOAPODS: 0.39.0

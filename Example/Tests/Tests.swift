@@ -5,19 +5,6 @@ import CoreLocation
 import ApiSwiftTestModule
 
 class ApiTests: XCTestCase {
-  func testSerialize() {
-    let expectedObj = TestClass(string: "String 1", number: 54, location: CLLocationCoordinate2DMake(39, 49), array: [1, 2, 3], map: ["key1" : ["key2": 43]], set: Set([1.4, 1, 3.6, 66.6]))
-    if let serializedObj = Serializer.serialize(expectedObj) {
-      do {
-        let obj = try Serializer.unserialize(serializedObj)
-        print(obj)
-        XCTAssertEqual(expectedObj, (obj as! TestClass))
-      } catch {
-        XCTFail()
-      }
-    }
-  }
-  
   func testMethodCall() {
     let url = NSURL(string: "http://localhost:8000/Api.php")
     let obj1 = TestClass(string: "String 1", number: 54, location: CLLocationCoordinate2DMake(39, 49), array: [1, 2, 3], map: ["key1" : ["key2": 43]], set: Set([1.4, 1, 3.6, 66.6]))
@@ -39,7 +26,7 @@ class ApiTests: XCTestCase {
         XCTFail("No json object was returned from the server")
       }
       expectation.fulfill()
-      }.resume()
+    }.resume()
     
     waitForExpectationsWithTimeout(5, handler: nil)
   }
