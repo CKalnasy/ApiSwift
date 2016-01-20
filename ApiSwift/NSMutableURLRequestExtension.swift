@@ -1,4 +1,5 @@
 import Foundation
+import SwiftSerialize
 
 public extension NSMutableURLRequest {
   convenience init(url: NSURL, className: String, functionName: String, params: Array<Any>, additionalParams: [String: String]?) {
