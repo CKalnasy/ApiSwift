@@ -9,7 +9,7 @@
     "CKalnasy": "kalnasy.6@osu.edu"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/ApiSwift.git",
+    "git": "https://github.com/ckalnasy/ApiSwift.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "SwiftSerialize": [
-      "~> 0.1.0"
+      "~> 0.1.1"
     ]
   }
 }

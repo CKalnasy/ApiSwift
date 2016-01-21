@@ -38,5 +38,5 @@ Parameters are serialized, sent to the server, deserialized, then passed as argu
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 
-  s.dependency 'SwiftSerialize', '~> 0.1.0'
+  s.dependency 'SwiftSerialize', '~> 0.1.1'
 end

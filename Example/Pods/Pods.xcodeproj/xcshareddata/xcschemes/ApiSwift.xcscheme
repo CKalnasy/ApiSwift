@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DE5A3F787D09546840D9C361'
+               BlueprintIdentifier = '8B9F26F2A02D123ED0C9E9BF'
                BlueprintName = 'ApiSwift'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'ApiSwift.framework'>

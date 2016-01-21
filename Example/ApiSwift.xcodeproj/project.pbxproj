@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EAE24EC1C4F818A00078EF8 /* ApiSwiftModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE7EE2F1C4F565200520DBF /* ApiSwiftModule.framework */; };
 		3EC611C01C4F56F00071438A /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC611BF1C4F56F00071438A /* TestClass.swift */; };
 		3EE7EE321C4F565200520DBF /* ApiSwiftModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE7EE311C4F565200520DBF /* ApiSwiftModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EAE24EC1C4F818A00078EF8 /* ApiSwiftModule.framework in Frameworks */,
 				992FF3F5005A5E57EE6BEE3D /* Pods_ApiSwift_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,7 +312,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ApiSwiftModule/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Loc.ApiSwiftModule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -333,7 +335,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ApiSwiftModule/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Loc.ApiSwiftModule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
