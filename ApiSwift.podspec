@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ApiSwift"
-  s.version          = "0.1.0"
+  s.version          = "0.1.3"
   s.summary          = "A library to call a specified function on a server from Swift 2.0"
 
 # This description is used to generate tags and improve search results.
@@ -38,5 +38,5 @@ Parameters are serialized, sent to the server, deserialized, then passed as argu
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 
-  s.dependency 'SwiftSerialize', '~> 0.1.1'
+  s.dependency 'SwiftSerialize'
 end
