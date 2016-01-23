@@ -7,7 +7,7 @@ import SwiftSerialize
 
 class ApiTests: XCTestCase {
   func testMethodCallWithParams() {
-    let url = NSURL(string: "http://localhost:8000/src/Test/api_test_handler.php")
+    let url = NSURL(string: "http://localhost:8000/tests/ckalnasy/test/api_test_handler.php")
     let obj1 = TestClass(string: "String 1", number: 54, location: CLLocationCoordinate2DMake(39, 49), array: [1, 2, 3], map: ["key1" : ["key2": 43]], set: Set([1.4, 1, 3.6, 66.6]))
     let params:[Any] = [obj1]
     let additionalParams:[String: String] = [
@@ -31,12 +31,13 @@ class ApiTests: XCTestCase {
   }
   
   func testMethodCallWithImage() {
-    let url = NSURL(string: "http://localhost:8000/src/Test/api_test_handler.php")
+    let url = NSURL(string: "http://localhost:8000/tests/ckalnasy/test/api_test_handler.php")
     let additionalParams:[String: String] = [
       "key1": "value 1",
       "key2": "value 2"
     ]
-    let request = NSMutableURLRequest(url: url!, className: "TestClass", functionName: "testFunctionImage", image: UIImage(color: UIColor.redColor(), size: CGSize(width: 5, height: 5)), additionalParams: additionalParams)
+    let request = NSMutableURLRequest(url: url!, className: "TestClass", functionName: "tes
+      tFunctionImage", image: UIImage(color: UIColor.redColor(), size: CGSize(width: 5, height: 5)), additionalParams: additionalParams)
     let expectation = expectationWithDescription("1")
     
     NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
