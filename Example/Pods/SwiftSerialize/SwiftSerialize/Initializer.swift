@@ -2,7 +2,7 @@
 
 import Foundation
 import CoreLocation
-//import SwiftSerializeModule
+//import ApiSwiftModule
 
 enum InitializerError: ErrorType {
   case invalidArg(Int)

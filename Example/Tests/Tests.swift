@@ -36,8 +36,7 @@ class ApiTests: XCTestCase {
       "key1": "value 1",
       "key2": "value 2"
     ]
-    let request = NSMutableURLRequest(url: url!, className: "TestClass", functionName: "tes
-      tFunctionImage", image: UIImage(color: UIColor.redColor(), size: CGSize(width: 5, height: 5)), additionalParams: additionalParams)
+    let request = NSMutableURLRequest(url: url!, className: "TestClass", functionName: "testFunctionImage", image: UIImage(color: UIColor.redColor(), size: CGSize(width: 5, height: 5)), additionalParams: additionalParams)
     let expectation = expectationWithDescription("1")
     
     NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
