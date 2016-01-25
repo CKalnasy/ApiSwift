@@ -17,11 +17,11 @@ public extension NSMutableURLRequest {
   
   convenience init(url: NSURL, className: String, functionName: String, image: UIImage, additionalParams: [String: String]?) {
     self.init(URL: url)
-    let method = [
-      "className": className,
-      "functionName": functionName
-    ]
-    setImage(image, params: method)
+    
+    var params = additionalParams ?? [:]
+    params["className"] = className
+    params["functionName"] = functionName
+    setImage(image, params: params)
   }
 }
 
