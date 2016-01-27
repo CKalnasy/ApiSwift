@@ -35,11 +35,11 @@ Traditional HTTP parameters can also be added to the request in the additionalPa
 The objects passed as params are serialzed into JSON before being sent to the server. The server will deserialze the objects and recreate the
 objects on the server. Then, the static class function specified is called with the deserialzed objects.
 
+This library uses [SwiftSerialize](https://github.com/ckalnasy/SwiftSerialize) to serialize objects. It can also deserialize objects to classes (custom classes you make or built-in Swift classes) with virtually no work on your end. Head over there to find out how to fully utilize this library.
+
 ## Limitations
 
-Currently the only server-side language that can handle this requust is PHP (https://github.com/ckalnasy/Api-php).
-
-See github.com/ckalnasy/SwiftSerialize for other limitations as to what can be serialized/deserialized
+Currently the only server-side language that can handle this request is [PHP](https://github.com/ckalnasy/Api-php).
 
 ## Running the Example
 
