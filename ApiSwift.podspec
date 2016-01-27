@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ApiSwift"
-  s.version          = "0.1.6"
+  s.version          = "0.2.0"
   s.summary          = "A library to call a specified function on a server from Swift 2.0"
 
 # This description is used to generate tags and improve search results.
