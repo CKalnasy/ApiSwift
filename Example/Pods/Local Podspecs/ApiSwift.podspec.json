@@ -1,6 +1,6 @@
 {
   "name": "ApiSwift",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "summary": "A library to call a specified function on a server from Swift 2.0",
   "description": "Call a function on a server with parameters as swift objects.\nParameters are serialized, sent to the server, deserialized, then passed as arguments to the specific function",
   "homepage": "https://github.com/ckalnasy/ApiSwift",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/ckalnasy/ApiSwift.git",
-    "tag": "0.1.5"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"

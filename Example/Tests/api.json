@@ -1,0 +1,8 @@
+{
+  "ApiSwiftModule": {
+    "TestClass": "../ApiSwiftModule/TestClass.swift"
+  },
+  "CoreLocation": {
+    "CLLocationCoordinate2D": ""
+  }
+}

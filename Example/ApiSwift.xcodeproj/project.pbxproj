@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3EAE24EC1C4F818A00078EF8 /* ApiSwiftModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE7EE2F1C4F565200520DBF /* ApiSwiftModule.framework */; };
 		3EC611C01C4F56F00071438A /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC611BF1C4F56F00071438A /* TestClass.swift */; };
+		3ECE144E1C5BF6CC008FFD96 /* api.json in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE144D1C5BF6CC008FFD96 /* api.json */; };
 		3EE7EE321C4F565200520DBF /* ApiSwiftModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE7EE311C4F565200520DBF /* ApiSwiftModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		992FF3F5005A5E57EE6BEE3D /* Pods_ApiSwift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62B02900FD16A86ECFF169D /* Pods_ApiSwift_Tests.framework */; };
@@ -17,6 +18,7 @@
 /* Begin PBXFileReference section */
 		1B1323EC7813FE69311D1EFF /* Pods-ApiSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSwift_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApiSwift_Tests/Pods-ApiSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3EC611BF1C4F56F00071438A /* TestClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestClass.swift; sourceTree = "<group>"; };
+		3ECE144D1C5BF6CC008FFD96 /* api.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = api.json; sourceTree = "<group>"; };
 		3EE7EE2F1C4F565200520DBF /* ApiSwiftModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ApiSwiftModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE7EE311C4F565200520DBF /* ApiSwiftModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiSwiftModule.h; sourceTree = "<group>"; };
 		3EE7EE331C4F565200520DBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				3ECE144D1C5BF6CC008FFD96 /* api.json */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ECE144E1C5BF6CC008FFD96 /* api.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

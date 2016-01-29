@@ -1,5 +1,4 @@
 import Foundation
-import Serialize
 
 let kClassKey = "@type"
 
@@ -14,10 +13,9 @@ public struct Serializer {
     }
     return nil
   }
-  
+
   private static func serializeObject(a: Any) -> AnyObject? {
     if isBaseType(a) {
-      print(a)
       // floats need to have a decimal for some languages to recognize it as a float rather than an int
       if isFloatingPoint(a) {
         return Float(String(a)) // This adds a decimal and a zero
@@ -37,14 +35,7 @@ public struct Serializer {
         return serializeArray(set)
       }
     }
-    
-    // continue using this library since it works with
-    if isSerializeableType(a) {
-      if let a = a as? Serializeable {
-        return a.serialize()
-      }
-    }
-    
+
     let mirror = Mirror(reflecting: a)
     if mirror.children.count > 0 {
       var obj = [String: AnyObject]();
@@ -56,11 +47,11 @@ public struct Serializer {
     }
     return a as? AnyObject
   }
-  
+
   private static func isFloatingPoint(a: Any) -> Bool {
     return a.dynamicType == Float.self || a.dynamicType == Double.self
   }
-  
+
   public static func deserialize(jsonData: NSData) throws -> Any? {
     do {
       if let json = try NSJSONSerialization.JSONObjectWithData(jsonData, options: .MutableContainers) as? NSDictionary {
@@ -71,7 +62,7 @@ public struct Serializer {
     }
     return nil
   }
-  
+
   public static func deserialize(a: AnyObject) -> Any? {
     if isBaseType(a) {
       return a
@@ -129,7 +120,7 @@ extension Serializer {
     }
     return ret
   }
-  
+
   private static func serializeArray(array: NSArray) -> [AnyObject] {
     var ret:[AnyObject] = []
     for element in array {
@@ -139,7 +130,7 @@ extension Serializer {
     }
     return ret
   }
-  
+
   private static func serializeArray(array: NSSet) -> [AnyObject] {
     var ret:[AnyObject] = []
     for element in array {
@@ -149,7 +140,7 @@ extension Serializer {
     }
     return ret
   }
-  
+
   private static func serializeMap(map: [String: Any]) -> [String: AnyObject] {
     var ret: [String: AnyObject] = [:]
     for (key, value) in map {
@@ -159,7 +150,7 @@ extension Serializer {
     }
     return ret
   }
-  
+
   private static func serializeMap(map: [String: AnyObject]) -> [String: AnyObject] {
     var ret: [String: AnyObject] = [:]
     for (key, value) in map {
@@ -169,7 +160,7 @@ extension Serializer {
     }
     return ret
   }
-  
+
   private static func isList(a: Any) -> Bool {
     if let _ = a as? [Any] { return true }
     if let _ = a as? NSArray { return true }
@@ -178,14 +169,14 @@ extension Serializer {
     if let _ = a as? NSSet { return true }
     return false
   }
-  
+
   private static func isClass(a: Any) -> Bool {
     if let map = a as? [String: AnyObject] {
       return map[kClassKey] != nil
     }
     return false
   }
-  
+
   private static func isBaseType(a: Any) -> Bool {
     if let _ = a as? Int { return true }
     if let _ = a as? Float { return true }
@@ -204,7 +195,7 @@ extension Serializer {
     if let _ = a as? Character { return true }
     return false
   }
-  
+
   private static func isSerializeableType(a: Any) -> Bool {
     if let _ = a as? Int { return true }
     if let _ = a as? Float { return true }
